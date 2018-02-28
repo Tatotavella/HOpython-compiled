@@ -1,0 +1,3 @@
+gcc -c -fPIC arrays.c
+gcc -c -fPIC add_two.c
+gcc -shared arrays.o add_two.o -o libmymath.so
