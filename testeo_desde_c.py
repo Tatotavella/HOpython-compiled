@@ -39,7 +39,7 @@ resu_float_dir = math.add_float(y1_float,y2_float)
 resu1 = math.add_int_ref(x1_p, x2_p, r1_p)
 resu2 = math.add_float_ref(y1_p, y2_p, r2_p)
 
-# Casteo del resultado
+# Casteo del resultado (Se puede hacer de una manera mucho mas directa, ver implementacion del wrapper)
 resu_int_ref = C.cast(r1_p,C.POINTER(C.c_int))
 resu_int_ref = resu_int_ref.contents.value
 resu_float_ref = C.cast(r2_p,C.POINTER(C.c_float))
